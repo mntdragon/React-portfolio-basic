@@ -1,0 +1,83 @@
+#subreddit{
+padding: 1em;
+}
+
+#subreddit h1{
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: rgb(235, 92, 92);
+    }
+/* Remove margins and padding from the list */
+#subreddit ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  #subreddit ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  #subreddit ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  #subreddit ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  #subreddit ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  #subreddit ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+
+  /* Buttons */
+
+  #subreddit button {
+    font-size: 30px;
+    background: rgb(91, 36, 220); /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #514A9D , #24C6DC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #514A9D , #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 50%;
+  }
+  
+  #subreddit button:hover, #subreddit button:active{
+    background: rgb(91, 36, 220); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgb(74, 60, 224) , rgb(36, 137, 220)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,rgb(74, 60, 224) , rgb(36, 137, 220));
+  }
