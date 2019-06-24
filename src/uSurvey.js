@@ -109,6 +109,7 @@ class uSurvey extends Component {
     
     return (
       <div id="uSurvey">
+      <h1>This Survey will store the data in Firebase Real time database: </h1>
         {userName}
         -----------------------------------
         {questions}
