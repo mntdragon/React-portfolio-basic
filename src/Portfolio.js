@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Timer from "./Timer.js";
+import Timer from "./components/Timer.js";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import ProjectSale from "./ProjectSale.js";
-import FirebaseLogin from "./FirebaseLogin.js";
-import uSurvey from "./uSurvey.js";
-import ApiCall from "./ApiCall.js";
-import Slideshow from "./Slideshow.js";
+import ProjectSale from "./components/sale/ProjectSale";
+import FirebaseLogin from "./components/login/FirebaseLogin.js";
+import uSurvey from "./components/uSurvey.js";
+import ApiCall from "./components/ApiCall.js";
+import Slideshow from "./components/slideshow/Slideshow";
 class Portfolio extends Component {
 render(){
     return(

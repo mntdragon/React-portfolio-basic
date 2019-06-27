@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CosmeticSales from "./CosmeticSales.js";
+import CosmeticSales from "./CosmeticSales";
 class SaleC extends Component {
   render() {
       var cosmetics = [
